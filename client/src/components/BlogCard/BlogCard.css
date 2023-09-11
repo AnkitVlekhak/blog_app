@@ -1,0 +1,30 @@
+.blogcard {
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #f0e7e7;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.blog_image {
+	width: 400px;
+	border-radius: 10px;
+}
+.blogcard > a {
+	justify-content: center;
+	display: flex;
+}
+.blog__info {
+	margin-top: 10px;
+	width: 100%;
+	word-wrap: break-word;
+	font-size: 20px;
+}
+.username {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
