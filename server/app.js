@@ -45,12 +45,3 @@ app.get("/my-blog/:email", async (req, res) => {
     console.log(allBlogs);
     res.status(200).json({ data: allBlogs });
 })
-app.post("/delete-blog/:id", async (req, res) => {
-    const { id } = req.params;
-    const deleteitem = await Blog.findByIdAndDelete(id);
-    if (!deleteitem) {
-        console.log('Item not deleted');
-    }
-    console.log('Item deleted');
-    res.redirect("/show-blogs")
-})
